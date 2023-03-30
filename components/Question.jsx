@@ -26,7 +26,7 @@ export default function Question({ question, answer }) {
             <h2 className="font-bold text-veryDarkGrayishBlue  hover:text-softRed">
               {accordianData.questionData}
             </h2>
-            <div className="w-3 rotate-180">
+            <div className="w-3 rotate-180 transition duration-150">
               <Image src={arrow} alt="Arrow Icon" width={500} height={500} />
             </div>
           </div>
@@ -38,7 +38,7 @@ export default function Question({ question, answer }) {
             <h2 className="font-medium text-veryDarkGrayishBlue hover:text-softRed">
               {accordianData.questionData}
             </h2>
-            <div className="w-3">
+            <div className="w-3 transition duration-150">
               <Image src={arrow} alt="Arrow Icon" width={500} height={500} />
             </div>
           </div>
