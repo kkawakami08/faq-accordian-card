@@ -42,10 +42,10 @@ export default function Home() {
       <Head>
         <title>FAQ Accordian Card</title>
       </Head>
-      <main className="bg-gradient-to-b from-gradientViolet to-gradientBlue py-24 h-screen ">
-        <div className="bg-white w-11/12 rounded-3xl mx-auto flex flex-col items-center pt-32 pb-10 mt-28 drop-shadow-2xl z-0 px-8 xl:w-[70rem] xl:pl-[30rem] xl:py-20 xl:pr-32 xl:mt-0">
+      <main className="bg-gradient-to-b from-gradientViolet to-gradientBlue py-24 h-screen xl:py-52">
+        <div className="bg-white w-11/12 rounded-3xl mx-auto flex flex-col items-center pt-32 pb-10 mt-28 drop-shadow-2xl z-0 px-8 xl:w-[60rem] xl:pl-[29rem] xl:py-20 xl:pr-20 xl:mt-0 xl:relative">
 
-        <div className="w-60 relative z-10 bottom-60 xl:w-full xl:top-2 xl:right-[35rem] ">
+        <div className="w-60 relative z-10 bottom-60 xl:w-[60rem] xl:top-0 xl:right-[20rem] ">
           <div className=" absolute  ">
             <div className="">
               <Image

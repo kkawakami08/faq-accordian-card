@@ -21,9 +21,9 @@ export default function Question({ question, answer }) {
   return (
     <div className="">
       {accordianData.clicked ? (
-        <div className="flex flex-col gap-2 py-5 " onClick={handleClick}>
+        <div className="flex flex-col gap-2 py-5 hover:cursor-pointer" onClick={handleClick} >
           <div className="flex items-center justify-between">
-            <h2 className="font-bold text-veryDarkGrayishBlue">
+            <h2 className="font-bold text-veryDarkGrayishBlue  hover:text-softRed">
               {accordianData.questionData}
             </h2>
             <div className="w-3 rotate-180">
@@ -33,9 +33,9 @@ export default function Question({ question, answer }) {
           <p className="text-darkGrayishBlue">{accordianData.answerData}</p>
         </div>
       ) : (
-        <div className="flex flex-col gap-2 py-5  " onClick={handleClick}>
+        <div className="flex flex-col gap-2 py-5 hover:cursor-pointer " onClick={handleClick}>
           <div className="flex items-center justify-between">
-            <h2 className="font-medium text-veryDarkGrayishBlue">
+            <h2 className="font-medium text-veryDarkGrayishBlue hover:text-softRed">
               {accordianData.questionData}
             </h2>
             <div className="w-3">
