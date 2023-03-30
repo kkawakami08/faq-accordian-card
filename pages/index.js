@@ -10,33 +10,43 @@ export default function Home() {
       <Head>
         <title>FAQ Accordian Card</title>
       </Head>
-      <main className="flex flex-col items-center">
-        <div className="grid grid-cols-12 relative grid-rows-2">
-          <div className="col-start-3 col-span-8 row-span-2 row-start-1 ">
-            <Image 
-              src={headerImage}
-              alt="Header Image"
-              width={500}
-              height={500}
-            />
-          </div>
-          <div className="col-start-3 col-span-8 row-start-2 -z-10 ">
-            <Image 
-              src={headerImageShadow}
-              alt="Header Image Shadow"
-              width={500}
-              height={500}
-            />
+      <main className="bg-gradient-to-b from-gradientViolet to-gradientBlue  py-10">
+        
+        <div className="w-60 mx-auto  relative z-10">
+          <div className=" absolute  ">
+
+            <div className="">
+              <Image 
+                src={headerImage}
+                alt="Header Image"
+                width={500}
+                height={500}
+              />
+            </div>
+            <div className="absolute top-28">
+              <Image 
+                src={headerImageShadow}
+                alt="Header Image Shadow"
+                width={500}
+                height={500}
+              />
+            </div>
           </div>
         </div>
 
-        <div>
-          <h1>FAQ</h1>
+        <div className="bg-white w-11/12 rounded-3xl mx-auto flex flex-col items-center pt-32 pb-10 mt-28 drop-shadow-2xl z-0">
+          <h1 className="text-4xl font-bold text-veryDarkGrayishBlue">FAQ</h1>
           <Question />
+          <hr className=""/>
           <Question />
+          <hr className=""/>
           <Question />
+          <hr className=""/>
           <Question />
+          <hr className=""/>
           <Question />
+          <hr className=""/>
+         
         </div>
       </main>
     </>
