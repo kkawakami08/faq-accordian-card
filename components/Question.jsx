@@ -19,9 +19,9 @@ export default function Question({ question, answer }) {
   };
 
   return (
-    <div>
+    <div className="">
       {accordianData.clicked ? (
-        <div className="flex flex-col gap-2 py-5" onClick={handleClick}>
+        <div className="flex flex-col gap-2 py-5 " onClick={handleClick}>
           <div className="flex items-center justify-between">
             <h2 className="font-bold text-veryDarkGrayishBlue">
               {accordianData.questionData}
@@ -33,7 +33,7 @@ export default function Question({ question, answer }) {
           <p className="text-darkGrayishBlue">{accordianData.answerData}</p>
         </div>
       ) : (
-        <div className="flex flex-col gap-2 py-5" onClick={handleClick}>
+        <div className="flex flex-col gap-2 py-5  " onClick={handleClick}>
           <div className="flex items-center justify-between">
             <h2 className="font-medium text-veryDarkGrayishBlue">
               {accordianData.questionData}
@@ -42,9 +42,7 @@ export default function Question({ question, answer }) {
               <Image src={arrow} alt="Arrow Icon" width={500} height={500} />
             </div>
           </div>
-          <p className="hidden text-darkGrayishBlue">
-            {accordianData.answerData}
-          </p>
+          
         </div>
       )}
     </div>

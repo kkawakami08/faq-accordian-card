@@ -36,13 +36,16 @@ export default function Home() {
   const accordianElemetArray = inputData.map((item) => (
     <Question question={item.question} answer={item.answer} />
   ));
+
   return (
     <>
       <Head>
         <title>FAQ Accordian Card</title>
       </Head>
-      <main className="bg-gradient-to-b from-gradientViolet to-gradientBlue py-24 pt-12">
-        <div className="w-60 mx-auto  relative z-10">
+      <main className="bg-gradient-to-b from-gradientViolet to-gradientBlue py-24 h-screen ">
+        <div className="bg-white w-11/12 rounded-3xl mx-auto flex flex-col items-center pt-32 pb-10 mt-28 drop-shadow-2xl z-0 px-8 xl:w-[70rem] xl:pl-[30rem] xl:py-20 xl:pr-32 xl:mt-0">
+
+        <div className="w-60 relative z-10 bottom-60 xl:w-full xl:top-2 xl:right-[35rem] ">
           <div className=" absolute  ">
             <div className="">
               <Image
@@ -52,7 +55,7 @@ export default function Home() {
                 height={500}
               />
             </div>
-            <div className="absolute top-28">
+            <div className="absolute top-28 xl:top-64">
               <Image
                 src={headerImageShadow}
                 alt="Header Image Shadow"
@@ -62,12 +65,10 @@ export default function Home() {
             </div>
           </div>
         </div>
-
-        <div className="bg-white w-11/12 rounded-3xl mx-auto flex flex-col items-center pt-32 pb-10 mt-28 drop-shadow-2xl z-0 px-8">
-          <h1 className="text-4xl font-bold text-veryDarkGrayishBlue pb-4">
+          <h1 className="text-4xl font-bold text-veryDarkGrayishBlue pb-4 xl:self-start">
             FAQ
           </h1>
-          <div className="divide-y divide-lightGrayishBlue">
+          <div className="divide-y divide-lightGrayishBlue w-full">
             {accordianElemetArray}
           </div>
         </div>
